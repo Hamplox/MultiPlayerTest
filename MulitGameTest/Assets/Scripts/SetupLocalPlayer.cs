@@ -10,7 +10,7 @@ public class SetupLocalPlayer : NetworkBehaviour {
 	void Start () {
         if (isLocalPlayer)
         {
-            GetComponent<Movement>().enabled = true;
+            GetComponent<playerMovement>().enabled = true;
             GetComponentInChildren<Camera>().enabled = true;
         }
 	}
